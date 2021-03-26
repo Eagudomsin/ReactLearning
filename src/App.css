@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  background: rgb(126, 143, 137);
+  font-family: 'Playfair Display', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  background: rgb(52, 104, 69);
   color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Input , .Post {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5px;
+  width: 600px;
+  margin: 20px auto;
+  background-color: rgb(250, 250, 250);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input_header {
+  padding: 10px;
+  background: rgb(212, 212, 212);
+  font-size: 1.25rem;
+}
+
+.Input_field {
+  margin: auto 0 0;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+.Input_field:focus {
+  outline: none;
+}
+
+.Post {
+  width: 570px;
+  padding: 15px;
+}
+
+.Post_image {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.Post_delete {
+  border: none;
+  background: none;
+  padding:0;
+  float: right;
+  cursor: pointer;
 }
